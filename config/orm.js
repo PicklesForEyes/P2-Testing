@@ -39,6 +39,13 @@ var orm = {
   		if (err) throw err;
   		cb(res);
   	});
+  },
+  deleteOne: function(table, condition, cb) {
+    var queryString = 'DELETE FROM ' + table + ' WHERE ' + condition;
+    con.query(queryString, function(err, res) {
+      if (err) throw err;
+      cb(res);
+    })
   }
 }
 
