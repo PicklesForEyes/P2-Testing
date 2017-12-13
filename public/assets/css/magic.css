@@ -1,0 +1,10 @@
+/* CSS attributes customized for wizards, sorcerers, and warlocks */
+
+html{
+	background-color: #494678;
+	background-image: url("../images/lisbon.svg") repeat center;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:;
+}
