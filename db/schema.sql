@@ -1,1 +1,3 @@
-demo text
+DROP DATABASE IF EXISTS dnd_db;
+
+CREATE DATABASE dnd_db;

@@ -1,0 +1,52 @@
+module.exports = function(sequelize, DataTypes) {
+  const Character = sequelize.define('Character', {
+    name: {
+      type: DataTypes.STRING,
+      len: [1, 60]
+    },
+    class: {
+      type: DataTypes.STRING,
+      len: [1, 45]
+    },
+    xp: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    level: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    race: {
+      type: DataTypes.STRING,
+      len: [1, 45]
+    },
+    armorClass: {
+      type: DataTypes.STRING,
+      len: [1, 45]
+    },
+    strength: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    dex: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    constitution: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    intelligence: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    wisdom: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    charisma: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+  })
+}
