@@ -25,6 +25,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Aladin|Alegreya|Amatic+SC|Astloch|Berkshire+Swash|Bungee|Caesar+Dressing|Fondamento|Germania+One|Julius+Sans+One|Metal+Mania|Pirata+One|Spectral+SC|UnifrakturMaguntia" rel="stylesheet">
+
+  <script type="text/javascript" src="../public/js/index.js"></script>
 </head>
 
 <body>
@@ -78,19 +80,20 @@
       <div class="thumbnail">
         <img src="https://i.pinimg.com/736x/0d/1c/bd/0d1cbd1fa58e71326bce2d829b32293b--art-pics-rogues.jpg">
         <div class="caption">
-          <h3 class="name">Character Name</h3>
-          <h3 class="lvl-class">Lvl/Class</h3>
+          <form id="characterFrom">
+          <h3 class="name">Character Name <input type="text" id="CharaName"></h3>
+          <h3 class="lvl-class">Lvl/Class  <input type="text" id="lvlClass"></h3>
         </div>
       </div>
     </div>
     
     <div class="col-lg-8">
       <ul class="list-group">
-        <li class="list-group-item">Race</li>
-        <li class="list-group-item">Background</li>
-        <li class="list-group-item">Alignment</li>
-        <li class="list-group-item">Armor Class</li>
-        <li class="list-group-item">XP Points</li>
+        <li class="list-group-item">Race <input type="text" id="Race"></li>
+        <li class="list-group-item">Background<textarea id="charaBackground"></textarea></li>
+        <li class="list-group-item">Alignment<input type="text" id="charaAlign"></li>
+        <li class="list-group-item">Armor Class <input type="number" id="charaAC"></li>
+        <li class="list-group-item">XP Points <input type="number" id="charaXP" ></li>
       </ul>
     </div>
   </div>
@@ -99,35 +102,36 @@
   <div class="row">
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Strength</div>
+        <div class="panel-body">Strength <input type="number" id="Str" min="1" max="20"></div>
       </div>
     </div>
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Dexterity</div>
+        <div class="panel-body">Dexterity <input type="number" id="Dex" min="1" max="20"></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Intelligence</div>
+        <div class="panel-body">Intelligence <input type="number" id="Int" min="1" max="20"></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Wisdom</div>
+        <div class="panel-body">Wisdom <input type="number" id="Wis" min="1" max="20"></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Constitution</div>
+        <div class="panel-body">Constitution <input type="number" id="Con" min="1" max="20"></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Charisma</div>
+        <div class="panel-body">Charisma <input type="number" id="Cha" min="1" max="20"></div>
       </div>
     </div> 
   </div>
+
 
   <!-- Personality & Physical Description Panels -->
   <div class="row">
@@ -156,6 +160,8 @@
       </div>
     </div>
   </div>
+  <input type="submit">
+  </form>
 
 </div>
 
