@@ -7,13 +7,13 @@ module.exports = app => {
   	});
   });
 
-  app.post('api/character', (req, res) => {
-  	db.Character.create({
+  // app.post('api/character', (req, res) => {
+  // 	db.Character.create({
   	  
-  	}).then(dbCharacter) => {
-  	  res.json(dbCharacter)
-  	};
-  })
+  // 	}).then(dbCharacter) => {
+  // 	  res.json(dbCharacter)
+  // 	};
+  // })
 
   app.delete('api/character/:id', (req, res) => {
   	db.Character.destroy({
@@ -25,15 +25,15 @@ module.exports = app => {
   	});
   })
 
-  app.put('api/character', (req, res) => {
-  	db.Character.update({
+  // app.put('api/character', (req, res) => {
+  // 	db.Character.update({
 
-  	}, {
-  	  where: {
-  	  	id: req.body.id
-  	  }
-  	}).then(dbCharacter => {
-  	  res.json(dbCharacter);
-  	});
-  });
+  // 	}, {
+  // 	  where: {
+  // 	  	id: req.body.id
+  // 	  }
+  // 	}).then(dbCharacter => {
+  // 	  res.json(dbCharacter);
+  // 	});
+  // });
 };
