@@ -1,0 +1,16 @@
+h1, h2{
+	font-family:"Unifraktur Maguntia", cursive;
+}
+
+h3, h4, h5, .panel-heading, .panel-body{
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.readable, p{
+	font-family: 'Alegreya', serif;
+}
+
+body{
+	background-color:;
+	background-image:url('') repeat center;
+}
