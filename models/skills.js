@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  var Skills = sequelize.define('Skills', {
+  const Skills = sequelize.define('Skills', {
   	acrobatics: DataTypes.BOOLEAN,
   	animal_handling: DataTypes.BOOLEAN,
   	arcana: DataTypes.BOOLEAN,
