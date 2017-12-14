@@ -14,7 +14,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     level: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        min: 1,
+        max: 20
+      }
     },
     race: {
       type: DataTypes.STRING,
