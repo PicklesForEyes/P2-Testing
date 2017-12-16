@@ -18,8 +18,6 @@ $(document).ready(() => {
       Charisma: $("#cha").val().trim()
     }
 
-    console.log(character)
-
     $.ajax({
       url:"/api/character",
       method: "POST",
@@ -29,5 +27,24 @@ $(document).ready(() => {
         console.log(result)
       }
     })
+
+
+    $('#name').val('')
+    $('#level').val('')
+    $('#class').val('')
+    $('#race').val('')
+    $('#background').val('')
+    $('#alignment').val('')
+    $('#armor').val('')
+    $('#xp').val('')
+    $('#str').val('')
+    $('#dex').val('')
+    $('#con').val('')
+    $('#int').val('')
+    $('#wis').val('')
+    $('#cha').val('')
+    $('#personality').val('')
+    $('#physical').val('')
+
   });
 })
