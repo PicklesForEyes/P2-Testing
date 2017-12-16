@@ -1,8 +1,8 @@
-h1, h2{
+h1, h2, h3{
 	font-family:"Berkshire Swash", cursive;
 }
 
-h3, h4, h5, .panel-heading, .panel-body{
+h4, h5, .panel-heading, .panel-body, .list-group-item{
 	font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -12,4 +12,9 @@ h3, h4, h5, .panel-heading, .panel-body{
 
 body{
 	background-color:;
+	background-image:url('../images/vintage-concrete.png') repeat center;
+}
+
+.profile{
+	margin-top:71px;
 }
