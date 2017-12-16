@@ -20,15 +20,14 @@ $(document).ready(() => {
 
     console.log(character)
 
-    // var dataSend = $.ajax({
-    //   url:"/posts",
-    //   method: "POST",
-    //   data: "subChara" ,
-    //   dataType: "JSON"
-    // })
-
-    // dataSend.done(() => {
-    //   console.log(dataSend.data);
-    // })
+    $.ajax({
+      url:"/api/character",
+      method: "POST",
+      data: character,
+      dataType: "JSON",
+      success: result => {
+        console.log(result)
+      }
+    })
   });
 })
