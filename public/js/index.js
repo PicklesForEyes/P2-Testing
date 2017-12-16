@@ -1,29 +1,36 @@
-$("#characterForm").submit(function(event) {
-  event.preventDefault();
-  var subChara = {
-    Name : $("#charaName").val().trim(),
-    LvlClass : $("#lvlClass").val().trim(),
-    Race: $("#charaRace").val().trim(),
-    Background: $("#charaBackground").val().trim(),
-    Alignment: $("#charaAlign").val().trim(),
-    AC: $("#CharaAC").val().trim(),
-    XP: $("#CharaXP").val().trim(),
-    Str : $("#Str").val().trim(),
-    Dex : $("#Dex").val().trim(),
-    Con : $("#Con").val().trim(),
-    Int : $("#Int").val().trim(),
-    Wis : $("#Wis").val().trim(),
-    Cha : $("#Cha").val().trim()
-  }
-  var dataSend = $.ajax({
-    url:"/posts",
-    method: "POST",
-    data: "subChara" ,
-    dataType: "JSON"
-  })
+console.log('javascript linked')
 
-  dataSend.done(() => {
+$("#submit").on('click', function(e) {
+  e.preventDefault();
+  console.log('i get here')
+  // var character = {
+  //   Name: $("#name").val().trim(),
+  //   Level: $("#level").val().trim(),
+  //   Class: $('#class').val().trim(),
+  //   Race: $("#charaRace").val().trim(),
+  //   Background: $("#background").val().trim(),
+  //   Alignment: $("#alignment").val().trim(),
+  //   AC: $("#armor").val().trim(),
+  //   XP: $("#xp").val().trim(),
+  //   Str: $("#str").val().trim(),
+  //   Dex: $("#dex").val().trim(),
+  //   Con: $("#con").val().trim(),
+  //   Int: $("#int").val().trim(),
+  //   Wis: $("#wis").val().trim(),
+  //   Cha: $("#cha").val().trim(),
+  //   Physical: $('#physical').val().trim(),
+  //   Personality: $('#personality').val().trim(),
+  //   Background: $('#background').val().trim()
+  // };
 
-    console.log(dataSend.data);
-  })
+  // console.log(character);
+
+  // $.ajax({
+  //   url: "/posts",
+  //   method: "POST",
+  //   data: "character" ,
+  //   dataType: "JSON"
+  // }).done(() => {
+  //   console.log('sent');
+  // })
 });
