@@ -1,8 +1,4 @@
-var dnd = require("dnd");
-var con = require("con");
-var orm = require("orm");
-
-$(".submit").on("click", function(class, res) {
+$(".submit").on("click", function() {
 	if ($("#class").val === "bard") {
 		$('link[href="bard.css"]').attr('href','bard.css');
 	} else if ($("#class").val === "barbarian") {
@@ -25,3 +21,5 @@ $(".submit").on("click", function(class, res) {
 		$('link[href="bard.css"]').attr('href','wizard.css');
 	}
 });
+
+module.exports = "index";
