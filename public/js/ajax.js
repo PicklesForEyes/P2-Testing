@@ -15,10 +15,8 @@ $(document).ready(() => {
       Constitution: $("#con").val().trim(),
       Intelligence: $("#int").val().trim(),
       Wisdom: $("#wis").val().trim(),
-      Character: $("#cha").val().trim()
+      Charisma: $("#cha").val().trim()
     }
-
-    console.log(character)
 
     $.ajax({
       url:"/api/character",
@@ -27,6 +25,24 @@ $(document).ready(() => {
       dataType: "JSON"
     }).done(data => {
       console.log(data);
+      
     })
+
+    $('#name').val('')
+    $('#level').val('')
+    $('#class').val('')
+    $('#race').val('')
+    $('#background').val('')
+    $('#alignment').val('')
+    $('#armor').val('')
+    $('#xp').val('')
+    $('#str').val('')
+    $('#dex').val('')
+    $('#con').val('')
+    $('#int').val('')
+    $('#wis').val('')
+    $('#cha').val('')
+    $('#personality').val('')
+    $('#physical').val('')
   });
 })

@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
         max: 20
       }
     },
+    alignment: {
+      type: DataTypes.STRING,
+      len: [1, 25]
+    },
     race: {
       type: DataTypes.STRING,
       len: [1, 45]
@@ -51,6 +55,15 @@ module.exports = (sequelize, DataTypes) => {
     charisma: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    physical: {
+      type: DataTypes.TEXT,
+    },
+    personality: {
+      type: DataTypes.TEXT,
+    },
+    background: {
+      type: DataTypes.TEXT,
     }
   })
   return Character
