@@ -15,7 +15,7 @@ $(document).ready(() => {
       Constitution: $("#con").val().trim(),
       Intelligence: $("#int").val().trim(),
       Wisdom: $("#wis").val().trim(),
-      Character: $("#cha").val().trim()
+      Charisma: $("#cha").val().trim()
     }
 
     console.log(character)

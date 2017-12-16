@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
         max: 20
       }
     },
+    alignment: {
+      type: DataTypes.STRING,
+      len: [1, 25]
+    },
     race: {
       type: DataTypes.STRING,
       len: [1, 45]
