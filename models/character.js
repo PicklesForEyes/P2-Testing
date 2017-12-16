@@ -51,6 +51,15 @@ module.exports = (sequelize, DataTypes) => {
     charisma: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    physical: {
+      type: DataTypes.TEXT,
+    },
+    personality: {
+      type: DataTypes.TEXT,
+    },
+    background: {
+      type: DataTypes.TEXT,
     }
   })
   return Character
