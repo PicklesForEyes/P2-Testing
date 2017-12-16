@@ -1,36 +1,34 @@
 $(document).ready(() => {
-  
-console.log('connected')
-
   $("#submit").on('click', function(event) {
     event.preventDefault();
-    console.log('I get here')
-    var subChara = {
-      Name : $("#charaName").val().trim(),
-      LvlClass : $("#lvlClass").val().trim(),
-      Race: $("#charaRace").val().trim(),
-      Background: $("#charaBackground").val().trim(),
-      Alignment: $("#charaAlign").val().trim(),
-      AC: $("#CharaAC").val().trim(),
-      XP: $("#CharaXP").val().trim(),
-      Str : $("#Str").val().trim(),
-      Dex : $("#Dex").val().trim(),
-      Con : $("#Con").val().trim(),
-      Int : $("#Int").val().trim(),
-      Wis : $("#Wis").val().trim(),
-      Cha : $("#Cha").val().trim()
+    var character = {
+      Name : $("#name").val().trim(),
+      Level : $("#level").val().trim(),
+      Class: $('#class').val().trim(),
+      Race: $("#race").val().trim(),
+      Background: $("#background").val().trim(),
+      Alignment: $("#alignment").val().trim(),
+      ArmorClass: $("#armor").val().trim(),
+      ExperiencePoints: $("#xp").val().trim(),
+      Strength: $("#str").val().trim(),
+      Dexterity: $("#dex").val().trim(),
+      Constitution: $("#con").val().trim(),
+      Intelligence: $("#int").val().trim(),
+      Wisdom: $("#wis").val().trim(),
+      Character: $("#cha").val().trim()
     }
 
-    var dataSend = $.ajax({
-      url:"/posts",
-      method: "POST",
-      data: "subChara" ,
-      dataType: "JSON"
-    })
+    console.log(character)
 
-    dataSend.done(() => {
-      console.log(dataSend.data);
-    })
+    // var dataSend = $.ajax({
+    //   url:"/posts",
+    //   method: "POST",
+    //   data: "subChara" ,
+    //   dataType: "JSON"
+    // })
+
+    // dataSend.done(() => {
+    //   console.log(dataSend.data);
+    // })
   });
-
 })
