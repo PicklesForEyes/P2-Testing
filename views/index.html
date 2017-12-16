@@ -65,19 +65,19 @@
         <img src="https://i.pinimg.com/736x/0d/1c/bd/0d1cbd1fa58e71326bce2d829b32293b--art-pics-rogues.jpg">
         <div class="caption">
           <form id="characterFrom">
-          <h3 class="name">Character Name <input type="text" id="CharaName"></h3>
-          <h3 class="lvl-class">Lvl/Class  <input type="text" id="lvlClass"></h3>
+          <h3 class="name">Character Name <span id='name'></span></h3>
+          <h3 class="lvl-class">Lvl/Class  <span id='level'></span></h3>
         </div>
       </div>
     </div>
     
     <div class="col-lg-8">
       <ul class="list-group">
-        <li class="list-group-item">Race <input type="text" id="Race"></li>
-        <li class="list-group-item">Background<textarea id="charaBackground"></textarea></li>
-        <li class="list-group-item">Alignment<input type="text" id="charaAlign"></li>
-        <li class="list-group-item">Armor Class <input type="number" id="charaAC"></li>
-        <li class="list-group-item">XP Points <input type="number" id="charaXP" ></li>
+        <li class="list-group-item">Race <span id='race'></span></li>
+        <li class="list-group-item">Background <span id='background'></span></li>
+        <li class="list-group-item">Alignment <span id='alignment'></span></li>
+        <li class="list-group-item">Armor Class <span id='armor'></span></li>
+        <li class="list-group-item">XP Points <span id='xp'></span></li>
       </ul>
     </div>
   </div>
@@ -86,32 +86,32 @@
   <div class="row">
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Strength <input type="number" id="Str" min="1" max="20"></div>
+        <div class="panel-body">Strength <span id='str'></span></div>
       </div>
     </div>
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Dexterity <input type="number" id="Dex" min="1" max="20"></div>
+        <div class="panel-body">Dexterity <span id='dex'></span></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Intelligence <input type="number" id="Int" min="1" max="20"></div>
+        <div class="panel-body">Intelligence <span id='int'></span></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Wisdom <input type="number" id="Wis" min="1" max="20"></div>
+        <div class="panel-body">Wisdom <span id='wis'></span></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Constitution <input type="number" id="Con" min="1" max="20"></div>
+        <div class="panel-body">Constitution <span id='con'></span></div>
       </div>
     </div> 
     <div class="col-sm-2">
       <div class="panel panel-default">
-        <div class="panel-body">Charisma <input type="number" id="Cha" min="1" max="20"></div>
+        <div class="panel-body">Charisma <span id='char'></span></div>
       </div>
     </div> 
   </div>
@@ -122,13 +122,13 @@
     <div class="col-lg-6">
       <div class="panel panel-default">
         <div class="panel-heading">Physical Description</div>
-        <div class="panel-body readable">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
+        <div class="panel-body readable" id='physical'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
       </div>
     </div>
     <div class="col-lg-6">
       <div class="panel panel-default">
         <div class="panel-heading">Personality Description</div>
-        <div class="panel-body readable">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
+        <div class="panel-body readable" id='personality'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
       </div>
     </div>
   </div>
@@ -138,7 +138,7 @@
     <div class="col-lg-12">
       <div class="panel panel-default">
         <div class="panel-heading">Background Story</div>
-        <div class="panel-body readable">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln.
+        <div class="panel-body readable" id='background'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln.
         <br><br>
         'fhalma hai athg ep fhtagn tharanak athgyar cfhtagn lloig phlegeth throd nglui ftaghu shogg ch' naflya, gof'nn Chaugnar Faugnoth ngllll s'uhn fhtagn gotha uaaah hrii ah syha'h shugg llll 'bthnk. Shub-Niggurath n'ghft nggeb gof'nn Shub-Niggurath ph'fhtagn wgah'noth shugg hafh'drn hai vulgtm, stell'bsna athg shagg stell'bsna ehye 'bthnkog hrii phlegeth ron Tsathoggua Hastur, lloig ron ftaghunyth chtenff k'yarnak mnahn' goka ph'ep lloigyar. Uln f'athg ng'ai fm'latgh geb li'hee nnns'uhn ph'k'yarnak orr'eoth, ebunma athg phlegeth shtunggli ph'vulgtm naflR'lyeh ep nnnnglui ron, phlegeth fm'latghoth wgah'n stell'bsna vulgtlagln ph'ebunma s'uhn. Ftaghu 'ai fhtagn y-sgn'wahl bug vulgtlagln y-uaaah orr'e bug ngvulgtm nilgh'ri, chtenff h'ah Shub-Niggurath vulgtm ya stell'bsna athg naflgotha hai 'ai Azathoth, s'uhn Nyarlathotep lloig naflHastur fhtagn f'gnaiih llll y-mg grah'n. </div>
       </div>
