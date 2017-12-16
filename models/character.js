@@ -53,12 +53,5 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     }
   })
-
-  Character.associate = models => {
-    Character.hasOne(models.Skills, {
-      onDelete: 'cascade'
-    })
-  }
-
   return Character
 }
