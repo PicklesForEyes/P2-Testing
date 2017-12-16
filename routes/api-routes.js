@@ -26,7 +26,7 @@ module.exports = app => {
       res.json(dbCharacter)
     })
   })
-  
+
 
   app.delete('api/character/:id', (req, res) => {
   	db.Character.destroy({
@@ -38,15 +38,17 @@ module.exports = app => {
   	});
   })
 
-  // app.put('api/character', (req, res) => {
-  // 	db.Character.update({
 
-  // 	}, {
-  // 	  where: {
-  // 	  	id: req.body.id
-  // 	  }
-  // 	}).then(dbCharacter => {
-  // 	  res.json(dbCharacter);
-  // 	});
-  // });
+  app.put('/api/character/', (req, res) => {
+    db.Character.update(
+      req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      }
+    ).then(dbCharacter => {
+      res.json(dbCharacter);
+    })
+  })
 };
