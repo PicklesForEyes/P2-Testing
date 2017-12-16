@@ -46,7 +46,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img alt="Brand" src="../assets/images/genie-lamp.svg" style="height: 50px; width:50px;"></a>
+        <a class="navbar-brand" href="/"><img alt="Brand" src="../assets/images/genie-lamp.svg" style="height: 50px; width:50px;"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,17 +69,54 @@
           <form id="characterForm">
           <h3 class="name">Name <input type="text" id='name'></h3>
           <h3 class="lvl">Level  <input type="text" id='level'></h3>
-          <h3 class="class">Class  <input type="text" id='class'></h3>
+          <h3 class="class">Class  
+            <select name="class">
+              <option value="barbarian">Barbarian</option>
+              <option value="bard">Bard</option>
+              <option value="cleric">Cleric</option>
+              <option value="druid">Druid</option>
+              <option value="fighter">Fighter</option>
+              <option value="monk">Monk</option>
+              <option value="paladin">Paladin</option>
+              <option value="ranger">Ranger</option>
+              <option value="rogue">Rogue</option>
+              <option value="sorcerer">Sorcerer</option>
+              <option value="wizard">Wizard</option>
+            </select>
+          </h3>
         </div>
       </div>
     </div>
     
     <div class="col-lg-8">
       <ul class="list-group">
-        <li class="list-group-item">Race <input type="text" id='race'></li>
+        <li class="list-group-item">Race <select name="class">
+              <option value="dragonborn">Dragonborn</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="elf">Elf</option>
+              <option value="gnome">Gnome</option>
+              <option value="half-elf">Half-Elf</option>
+              <option value="half-orc">Half-Orc</option>
+              <option value="halfling">Halfling</option>
+              <option value="human">Human</option>
+            </select></li>
         <li class="list-group-item">Background <input type="text" id='background'></li>
-        <li class="list-group-item">Alignment <input type="text" id='alignment'></li>
-        <li class="list-group-item">Armor Class <input type="text" id='armor'></span></li>
+        <li class="list-group-item">Alignment <select name="class">
+              <option value="lg">Lawful Good</option>
+              <option value="ng">Neutral Good</option>
+              <option value="cg">Chaotic Good</option>
+              <option value="ln">Lawful Neutral</option>
+              <option value="tn">True Neutral</option>
+              <option value="cn">Chaotic Neutral</option>
+              <option value="le">Lawful Evil</option>
+              <option value="ne">Neutral Evil</option>
+              <option value="ce">Chaotic Evil</option>
+            </select></li>
+        <li class="list-group-item">Armor Class <select name="class">
+              <option value="light">Light</option>
+              <option value="medium">Medium</option>
+              <option value="heavy">Heavy</option>
+            </select></span></li>
         <li class="list-group-item">XP Points <input type="number" id='xp'></li>
       </ul>
     </div>
@@ -118,7 +155,6 @@
       </div>
     </div> 
   </div>
-
 
   <!-- Personality & Physical Description Panels -->
   <div class="row">

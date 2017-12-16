@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $("#submit").on('click', function(event) {
+  $("#submit").on('click', event => {
     event.preventDefault();
     var character = {
       Name : $("#name").val().trim(),
@@ -20,15 +20,13 @@ $(document).ready(() => {
 
     console.log(character)
 
-    // var dataSend = $.ajax({
-    //   url:"/posts",
-    //   method: "POST",
-    //   data: "subChara" ,
-    //   dataType: "JSON"
-    // })
-
-    // dataSend.done(() => {
-    //   console.log(dataSend.data);
-    // })
+    $.ajax({
+      url:"/api/character",
+      method: "POST",
+      data: character,
+      dataType: "JSON"
+    }).success(data => {
+      console.log(data);
+    })
   });
 })
