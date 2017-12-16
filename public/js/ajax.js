@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $("#submit").on('click', function(event) {
+  $("#submit").on('click', event => {
     event.preventDefault();
     var character = {
       Name : $("#name").val().trim(),
@@ -28,7 +28,6 @@ $(document).ready(() => {
       }
     })
 
-
     $('#name').val('')
     $('#level').val('')
     $('#class').val('')
@@ -45,6 +44,5 @@ $(document).ready(() => {
     $('#cha').val('')
     $('#personality').val('')
     $('#physical').val('')
-
   });
 })
