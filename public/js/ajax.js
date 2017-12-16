@@ -2,13 +2,13 @@ $(document).ready(() => {
   $("#submit").on('click', event => {
     event.preventDefault();
     var character = {
-      Name : $("#name").val().trim(),
-      Level : $("#level").val().trim(),
-      Class: $('#class').val().trim(),
-      Race: $("#race").val().trim(),
+      Name: $("#name").val().trim(),
+      Level: $("#level").val().trim(),
+      Class: $('#class').val(),
+      Race: $("#race").val(),
       Background: $("#background").val().trim(),
-      Alignment: $("#alignment").val().trim(),
-      ArmorClass: $("#armor").val().trim(),
+      Alignment: $("#alignment").val(),
+      ArmorClass: $("#armor").val(),
       ExperiencePoints: $("#xp").val().trim(),
       Strength: $("#str").val().trim(),
       Dexterity: $("#dex").val().trim(),
@@ -25,7 +25,7 @@ $(document).ready(() => {
       method: "POST",
       data: character,
       dataType: "JSON"
-    }).success(data => {
+    }).done(data => {
       console.log(data);
     })
   });
