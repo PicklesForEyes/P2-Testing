@@ -1,18 +1,31 @@
+body{
+	background-color:#f8e1ac;
+	background-image:url('../images/vintage-concrete.png') repeat center;
+}
+
+.panel, .panel-body, .thumbnail{
+	background-color:#f8e1ac;
+	border-color:#f8e1ac;
+}
+
+.panel-default>.panel-heading {
+	background-color:#cdb078;
+	border-color:#f8e1ac;
+}
+
 h1, h2, h3{
 	font-family:"Fondamento", cursive;
+	font-size:3.142em;
 }
 
 h4, h5, .panel-heading, .panel-body, .list-group-item{
 	font-family: 'Julius Sans One', sans-serif;
+	font-size:1.942em;
 }
 
 .readable, p{
 	font-family: 'Alegreya', serif;
-}
-
-body{
-	background-color:;
-	background-image:url('../images/vintage-concrete.png') repeat center;
+	font-size:1.6em;
 }
 
 .profile{

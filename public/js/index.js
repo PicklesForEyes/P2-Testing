@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-$(".submit").on("click", function() {
-=======
-var dnd = require("dnd");
-var con = require("con");
-var orm = require("orm");
-
-
 $(".submit").on("click", function(class, res) {
->>>>>>> 5be440c0c1a3c21da729b676a2353f965027b8de
 	if ($("#class").val === "bard") {
 		$('link[href="bard.css"]').attr('href','bard.css');
 	} else if ($("#class").val === "barbarian") {
@@ -20,6 +11,8 @@ $(".submit").on("click", function(class, res) {
 		$('link[href="bard.css"]').attr('href','fighter.css');
 	} else if ($("#class").val === "paladin"){
 		$('link[href="bard.css"]').attr('href','paladin.css');
+	} else if ($("#class").val === "monk"){
+		$('link[href="bard.css"]').attr('href','monk.css');
 	} else if ($("#class").val === "ranger"){
 		$('link[href="bard.css"]').attr('href','ranger.css');
 	} else if ($("#class").val === "rogue"){
