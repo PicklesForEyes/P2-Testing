@@ -16,7 +16,7 @@ app.use(methodOverride("_method"));
 require('./routes/html-routes.js')(app);
 require('./routes/api-routes.js')(app);
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync({ force: true }).then(function() {
   app.listen(port, function() {
     console.log('Listening on port' + port)
   })
