@@ -10,18 +10,18 @@ module.exports = app => {
 
   app.post('/api/character', (req, res) => {
     db.Character.create({
-      name: req.body.name,
-      class: req.body.class,
-      xp: req.body.xp,
-      level: req.body.level,
-      race: req.body.race,
-      armorClass: req.body.armorClass,
-      strength: req.body.strength,
-      dex: req.body.dex,
-      constitution: req.body.constitution,
-      intelligence: req.body.intelligence,
-      wisdom: req.body.wisdom,
-      charisma: req.body.charisma
+      name: req.body.Name,
+      level: req.body.Level,
+      class: req.body.Class,
+      xp: req.body.ExperiencePoints,
+      race: req.body.Race,
+      armorClass: req.body.ArmorClass,
+      strength: req.body.Strength,
+      dex: req.body.Dexterity,
+      constitution: req.body.Constitution,
+      intelligence: req.body.Intelligence,
+      wisdom: req.body.Wisdom,
+      charisma: req.body.Charisma
     }).then(dbCharacter => {
       res.json(dbCharacter)
     })
