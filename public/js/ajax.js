@@ -1,31 +1,48 @@
-console.log('connected')
+$(document).ready(() => {
+  $("#submit").on('click', event => {
+    event.preventDefault();
+    var character = {
+      Name: $("#name").val().trim(),
+      Level: $("#level").val().trim(),
+      Class: $('#class').val(),
+      Race: $("#race").val(),
+      Background: $("#background").val().trim(),
+      Alignment: $("#alignment").val(),
+      ArmorClass: $("#armor").val(),
+      ExperiencePoints: $("#xp").val().trim(),
+      Strength: $("#str").val().trim(),
+      Dexterity: $("#dex").val().trim(),
+      Constitution: $("#con").val().trim(),
+      Intelligence: $("#int").val().trim(),
+      Wisdom: $("#wis").val().trim(),
+      Charisma: $("#cha").val().trim()
+    }
 
-$("#submit").on('click', function(event) {
-  event.preventDefault();
-  var subChara = {
-    Name : $("#charaName").val().trim(),
-    LvlClass : $("#lvlClass").val().trim(),
-    Race: $("#charaRace").val().trim(),
-    Background: $("#charaBackground").val().trim(),
-    Alignment: $("#charaAlign").val().trim(),
-    AC: $("#CharaAC").val().trim(),
-    XP: $("#CharaXP").val().trim(),
-    Str : $("#Str").val().trim(),
-    Dex : $("#Dex").val().trim(),
-    Con : $("#Con").val().trim(),
-    Int : $("#Int").val().trim(),
-    Wis : $("#Wis").val().trim(),
-    Cha : $("#Cha").val().trim()
-  }
+    $.ajax({
+      url:"/api/character",
+      method: "POST",
+      data: character,
+      dataType: "JSON"
+    }).done(data => {
+      console.log(data);
+      
+    })
 
-  var dataSend = $.ajax({
-    url:"/posts",
-    method: "POST",
-    data: "subChara" ,
-    dataType: "JSON"
-  })
-
-  dataSend.done(() => {
-    console.log(dataSend.data);
-  })
-});
+    $('#name').val('')
+    $('#level').val('')
+    $('#class').val('')
+    $('#race').val('')
+    $('#background').val('')
+    $('#alignment').val('')
+    $('#armor').val('')
+    $('#xp').val('')
+    $('#str').val('')
+    $('#dex').val('')
+    $('#con').val('')
+    $('#int').val('')
+    $('#wis').val('')
+    $('#cha').val('')
+    $('#personality').val('')
+    $('#physical').val('')
+  });
+})
