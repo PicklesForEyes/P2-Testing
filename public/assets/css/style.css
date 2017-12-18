@@ -1,16 +1,21 @@
 body{
 	background-color:#f8e1ac;
-	background-image:url('../images/vintage-concrete.png') repeat center;
+	background-image:url('../images/vintage-concrete.png');
+	background-repeat: repeat;
+}
+
+.navbar-brand>img{
+	margin-top:-12px;
 }
 
 .panel, .panel-body, .thumbnail{
 	background-color:#f8e1ac;
-	border-color:#f8e1ac;
+	border-color:#e8c98e;
 }
 
 .panel-default>.panel-heading {
 	background-color:#cdb078;
-	border-color:#f8e1ac;
+	border-color:#e8c98e;
 }
 
 h1, h2, h3{

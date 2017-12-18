@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../public/assets/css/custom-css-bootstrap-magic-2017-12-12.css">
   <link rel="stylesheet" href="../public/assets/css/custom-variables-bootstrap-2017-12-12.scss">
   <link rel="stylesheet" href="../public/assets/css/style.css">
-  <link rel="stylesheet" href="../public/assets/css/rogue.css">
+  <link rel="stylesheet" href="../public/assets/css/bard.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -66,7 +66,7 @@
         <div class="caption">
           <form id="characterFrom">
           <h3 class="name">Character Name <span id='name'></span></h3>
-          <h3 class="lvl-class">Lvl/Class  <span id='level'></span></h3>
+          <h3 class="lvl-class"> <span id="class"></span> <span id='level'> </span></h3>
         </div>
       </div>
     </div>
@@ -79,43 +79,43 @@
         <li class="list-group-item">Armor Class <span id='armor'></span></li>
         <li class="list-group-item">XP Points <span id='xp'></span></li>
       </ul>
-    </div>
-  </div>
 
-  <!-- Str/Dex/Int/Wis/Con/Cha Boxes or Progress Bars-->
-  <div class="row">
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Strength <span id='str'></span></div>
+    <!-- Str/Dex/Int/Wis/Con/Cha Boxes or Progress Bars--> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Str:<span id='str'></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Dex:<span id='dex'></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Int:<span id='int'></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Wis:<span id='wis'></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Con:<span id='con'></span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-body">Cha:<span id='char'></span></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Dexterity <span id='dex'></span></div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Intelligence <span id='int'></span></div>
-      </div>
-    </div> 
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Wisdom <span id='wis'></span></div>
-      </div>
-    </div> 
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Constitution <span id='con'></span></div>
-      </div>
-    </div> 
-    <div class="col-sm-2">
-      <div class="panel panel-default">
-        <div class="panel-body">Charisma <span id='char'></span></div>
-      </div>
-    </div> 
-  </div>
 
+  </div>
 
   <!-- Personality & Physical Description Panels -->
   <div class="row">
