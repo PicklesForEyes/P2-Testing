@@ -1414,7 +1414,7 @@ select.form-control:focus::-ms-value {
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #f8e1ac;
-    border: 1px solid rgba(15, 11, 6, 0.125);
+    border: 1px solid #e8c98e;
 }
 .list-group-item.disabled,
 .list-group-item:disabled {
