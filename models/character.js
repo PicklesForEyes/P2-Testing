@@ -2,10 +2,12 @@ module.exports = (sequelize, DataTypes) => {
   const Character = sequelize.define('Character', {
     name: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 60]
     },
     class: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 45]
     },
     xp: {
@@ -22,10 +24,12 @@ module.exports = (sequelize, DataTypes) => {
     },
     alignment: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 25]
     },
     race: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 45]
     },
     armorClass: {
@@ -58,12 +62,15 @@ module.exports = (sequelize, DataTypes) => {
     },
     physical: {
       type: DataTypes.TEXT,
+      allowNull: false,
     },
     personality: {
       type: DataTypes.TEXT,
+      allowNull: false,
     },
     background: {
       type: DataTypes.TEXT,
+      allowNull: false,
     }
   })
   return Character
