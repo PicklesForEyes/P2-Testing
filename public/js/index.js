@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(window).on('load', function() {
 	if ($("#class").val() === "bard") {
 		$('link[href="bard.css"]').attr('href','bard.css');
 		$('img[src="assets/images/rogue.jpg"]').attr('src', 'assets/images/bard.jpg');

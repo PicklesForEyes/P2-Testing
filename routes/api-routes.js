@@ -42,7 +42,7 @@ module.exports = app => {
   })
 
 
-  app.delete('api/character/:id', (req, res) => {
+  app.delete('/api/character/:id', (req, res) => {
   	db.Character.destroy({
   	  where: {
   	  	id: req.params.id
