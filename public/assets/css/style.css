@@ -5,7 +5,7 @@ body{
 }
 
 .navbar-brand>img{
-	margin-top:-12px;
+	margin-top:-15px;
 }
 
 .panel, .panel-body, .thumbnail{
@@ -35,4 +35,8 @@ h3, h4, h5, .panel-heading, .panel-body, .list-group-item{
 
 .profile{
 	margin-top:71px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color:#f8e1ac;
 }
