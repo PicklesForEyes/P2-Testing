@@ -30,4 +30,10 @@ $(document).ready(() => {
       window.location.href = '//localhost:3000/character/' + data.id;
     })
   });
+
+  $('#delete').on('click', e => {
+    e.preventDefault();
+
+    console.log(document.URL)
+  })
 })
