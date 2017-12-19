@@ -12,4 +12,8 @@ module.exports = app => {
   app.get('/:name', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/index.html'));
   })
+
+  app.get('/character/:id', (req, res) => {
+    res.sendFile(path.join(__dirname, '../views/index.html'));
+  })
 };

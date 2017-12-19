@@ -7,7 +7,7 @@ module.exports = app => {
   	});
   });
 
-  app.get('/character/:id', (req, res) => {
+  app.get('/api/character/:id', (req, res) => {
     db.Character.findOne({
       where: {
         id: req.params.id
