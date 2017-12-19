@@ -7,6 +7,15 @@ module.exports = app => {
   	});
   });
 
+  app.get('/character/:id', (req, res) => {
+    db.Character.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(dbCharacter => {
+      res.json(dbCharacter)
+    })
+  })
 
   app.post('/api/character', (req, res) => {
     db.Character.create({
@@ -21,7 +30,12 @@ module.exports = app => {
       constitution: req.body.Constitution,
       intelligence: req.body.Intelligence,
       wisdom: req.body.Wisdom,
-      charisma: req.body.Charisma
+      charisma: req.body.Charisma,
+      physical: req.body.Physical,
+      personality: req.body.Personality,
+      background: req.body.Background,
+      alignment: req.body.Alignment,
+      story: req.body.Story,
     }).then(dbCharacter => {
       res.json(dbCharacter)
     })
