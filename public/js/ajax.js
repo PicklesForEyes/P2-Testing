@@ -36,12 +36,5 @@ $(document).ready(() => {
     var url = window.location.href;
     url = url.split('/');
     var id = url[4];
-
-    $.ajax({
-      url: '/api/character/' + id,
-      method: 'DELETE'
-    }).done(data => {
-      console.log(data)
-    })
   })
 })

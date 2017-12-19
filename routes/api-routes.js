@@ -1,4 +1,5 @@
 var db = require('../models');
+var Roll = require('roll')
 
 module.exports = app => {
   app.get('/api/character', (req, res) => {
@@ -64,5 +65,13 @@ module.exports = app => {
     ).then(dbCharacter => {
       res.json(dbCharacter);
     })
+  })
+
+  app.get('/api/dice/:totalDice/:dieSize', (req, res) => {
+    var roll = new Roll;
+
+    var yahtzee = roll.roll(`${req.params.totalDice}d${req.params.dieSize}`)
+
+    res.json(yahtzee.rolled)
   })
 };
