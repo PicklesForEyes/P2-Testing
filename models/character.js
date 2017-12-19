@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+var characterObj = (sequelize, DataTypes) => {
   const Character = sequelize.define('Character', {
     name: {
       type: DataTypes.STRING,
@@ -80,3 +80,5 @@ module.exports = (sequelize, DataTypes) => {
   })
   return Character
 }
+
+module.exports = characterObj;
