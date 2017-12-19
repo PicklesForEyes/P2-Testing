@@ -7,11 +7,11 @@ body{
 	background-color:#cdb078;
 }
 
-h1, h2, h3{
+h1, h2{
 	font-family:"Berkshire Swash", cursive;
 }
 
-h4, h5, .panel-heading, .panel-body, .list-group-item{
+h3, h4, h5, .panel-heading, .panel-body, .list-group-item{
 	font-family: 'Julius Sans One', sans-serif;
 }
 
