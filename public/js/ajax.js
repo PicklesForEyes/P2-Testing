@@ -27,7 +27,7 @@ $(document).ready(() => {
       data: character,
       dataType: "JSON"
     }).done(data => {
-      console.log(data);
+      window.location.href = '//localhost:3000/character/' + data.id;
     })
   });
 })
