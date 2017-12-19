@@ -34,7 +34,7 @@ $(document).ready(() => {
     $('#story').text(result.story);
     $('#physical').text(result.physical);
     $('#personality').text(result.personality);
-
+    
   var charName = $("#class").html();
 
   if (charName === "Bard") {
