@@ -34,6 +34,7 @@ $(document).ready(() => {
     $('#story').text(result.story);
     $('#physical').text(result.physical);
     $('#personality').text(result.personality);
+    $('#story').text(result.story);
 
   var charName = $("#class").html();
 
