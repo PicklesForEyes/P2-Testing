@@ -284,7 +284,7 @@ pre code {
     font-size: 1rem;
     line-height: 1.25;
     color: #634b2d;
-    background-color: #f8e1ac;
+    background-color: #FFF3C7;
     background-image: none;
     background-clip: padding-box;
     border: 1px solid rgba(15, 11, 6, 0.15);
@@ -297,7 +297,7 @@ pre code {
 }
 .form-control:focus {
     color: #634b2d;
-    background-color: #f8e1ac;
+    background-color: #FFF3C7;
     border-color: #847aad;
     outline: none;
 }
