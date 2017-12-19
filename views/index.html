@@ -13,18 +13,17 @@
   <link rel="stylesheet" href="../public/assets/css/custom-css-bootstrap-magic-2017-12-12.css">
   <link rel="stylesheet" disabled="true" href="../public/assets/css/custom-variables-bootstrap-2017-12-12.scss">
   <link rel="stylesheet" href="../public/assets/css/style.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/barbarian.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/bard.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/cleric.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/druid.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/fighter.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/monk.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/paladin.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/ranger.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/rogue.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/sorcerer.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/rogue.css">
-  <link rel="stylesheet" disabled="true" href="../public/assets/css/wizard.css">
+  <link rel="stylesheet" id="barbarian" disabled="true" href="../public/assets/css/barbarian.css">
+  <link rel="stylesheet" id="bard" disabled="true" href="../public/assets/css/bard.css">
+  <link rel="stylesheet" id="cleric" disabled="true" href="../public/assets/css/cleric.css">
+  <link rel="stylesheet" id="druid" disabled="true" href="../public/assets/css/druid.css">
+  <link rel="stylesheet" id="fighter" disabled="true" href="../public/assets/css/fighter.css">
+  <link rel="stylesheet" id="monk" disabled="true" href="../public/assets/css/monk.css">
+  <link rel="stylesheet" id="paladin" disabled="true" href="../public/assets/css/paladin.css">
+  <link rel="stylesheet" id="ranger" disabled="true" href="../public/assets/css/ranger.css">
+  <link rel="stylesheet" id="rogue" disabled="true" href="../public/assets/css/rogue.css">
+  <link rel="stylesheet" id="sorcerer" disabled="true" href="../public/assets/css/sorcerer.css">
+  <link rel="stylesheet" id="wizard" disabled="true" href="../public/assets/css/wizard.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -77,18 +76,18 @@
           <form id="characterFrom">
           <h2 class="name">Character Name <span id='name'></span></h2>
           <h3 class="lvl-class"> <span id="class">Ranger</span> <span id='level'> </span></h3>
-
         </div>
       </div>
     </div>
     
+    <!-- Profile Info -->
     <div class="col-lg-4">
       <ul class="list-group">
-        <li class="list-group-item">Race <span id='race'></span></li>
-        <li class="list-group-item">Background <span id='background'></span></li>
-        <li class="list-group-item">Alignment <span id='alignment'></span></li>
-        <li class="list-group-item">Armor Class <span id='armor'></span></li>
-        <li class="list-group-item">XP Points <span id='xp'></span></li>
+        <li class="list-group-item">Race: <span id='race'></span></li>
+        <li class="list-group-item">Background: <span id='background'></span></li>
+        <li class="list-group-item">Alignment: <span id='alignment'></span></li>
+        <li class="list-group-item">Armor Class: <span id='armor'></span></li>
+        <li class="list-group-item">XP Points: <span id='xp'></span></li>
       </ul>
 
     <!-- Str/Dex/Int/Wis/Con/Cha Boxes or Progress Bars--> 
@@ -126,17 +125,14 @@
       </div>
     </div>
 
-  </div>
-
   <!-- Personality & Physical Description Panels -->
-  <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading">Physical Description</div>
         <div class="panel-body readable" id='physical'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading">Personality Description</div>
         <div class="panel-body readable" id='personality'>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. 'bthnk lw'nafh throd Hastur stell'bsna 'ai, Cthulhu f'hupadgh Azathoth y-uh'e tharanakor hlirgh f'Hastur uln phlegeth. Zhro h'hupadgh ya fhtagn lw'nafh orr'e llll ng'fhalma ehye f'llll vulgtm, syha'h ftaghu R'lyeh fm'latgh nw llll n'gha kn'a Cthulhu. 'fhalma 'bthnk throd shtunggli mg lloig f'syha'h ron, nnngoka ngzhro sgn'wahl ebunma y-Cthulhu ebunma vulgtlagln, gotha vulgtm R'lyeh n'gha sgn'wahlagl nnnAzathoth. Hastur athg hafh'drn ngR'lyeh ah 'fhalmaoth ehye 'ai fm'latgh, 'ai wgah'n hrii uh'e wgah'n h'Nyarlathotep zhro s'uhn, k'yarnak nnnch' hupadgh ngCthulhu li'hee cehye vulgtm. Cthulhu sll'ha f'Dagon grah'n fhtagn ep n'gha hlirgh fhtagn f's'uhn chtenff 'fhalma ph'Tsathoggua ftaghu, zhro naCthulhu y-gnaiih hlirgh ooboshu lloigor R'lyehyar wgah'n hafh'drn shagg vulgtlagln. </div>
