@@ -34,6 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     armorClass: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 45]
     },
     strength: {
@@ -70,6 +71,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     background: {
       type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    story: {
+      type: DataTypes.STRING,
       allowNull: false,
     }
   })
