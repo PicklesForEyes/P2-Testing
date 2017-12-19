@@ -30,4 +30,18 @@ $(document).ready(() => {
       window.location.href = '//localhost:3000/character/' + data.id;
     })
   });
+
+  $('#diceRoller').on('click', event => {
+    event.preventDefault();
+    var totalDice = $('#diceNumber').val();
+    var dieSize = $('#dieSides').val();
+    $.ajax({
+      url: `/api/dice/${totalDice}/${dieSize}`,
+      method: 'GET'
+    }).done(result => {
+      for(var i = 0; i < result.length; i++) {
+        $('#diceResult').append(result[i])
+      }
+    })
+  })
 })
