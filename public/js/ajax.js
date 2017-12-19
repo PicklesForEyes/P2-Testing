@@ -15,7 +15,10 @@ $(document).ready(() => {
       Constitution: $("#con").val().trim(),
       Intelligence: $("#int").val().trim(),
       Wisdom: $("#wis").val().trim(),
-      Charisma: $("#cha").val().trim()
+      Charisma: $("#cha").val().trim(),
+      Physical: $('#physical').val().trim(),
+      Personality: $('#personality').val().trim(),
+      Story: $('#story').val().trim(),
     }
 
     $.ajax({
@@ -24,25 +27,21 @@ $(document).ready(() => {
       data: character,
       dataType: "JSON"
     }).done(data => {
-      console.log(data);
-      
+      window.location.href = '//localhost:3000/character/' + data.id;
     })
-
-    $('#name').val('')
-    $('#level').val('')
-    $('#class').val('')
-    $('#race').val('')
-    $('#background').val('')
-    $('#alignment').val('')
-    $('#armor').val('')
-    $('#xp').val('')
-    $('#str').val('')
-    $('#dex').val('')
-    $('#con').val('')
-    $('#int').val('')
-    $('#wis').val('')
-    $('#cha').val('')
-    $('#personality').val('')
-    $('#physical').val('')
   });
+
+  $('#delete').on('click', event => {
+    event.preventDefault();
+    var url = window.location.href;
+    url = url.split('/');
+    var id = url[4];
+
+    $.ajax({
+      url: '/api/character/' + id,
+      method: 'DELETE'
+    }).done(data => {
+      console.log(data)
+    })
+  })
 })

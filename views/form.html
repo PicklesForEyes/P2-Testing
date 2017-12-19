@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../public/assets/css/custom-css-bootstrap-magic-2017-12-12.css">
-  <link rel="stylesheet" href="../public/assets/css/custom-variables-bootstrap-2017-12-12.scss">
-  <link rel="stylesheet" href="../public/assets/css/style.css">
+
+  <link rel="stylesheet" href="/assets/css/custom-css-bootstrap-magic-2017-12-12.css">
+  <link rel="stylesheet" href="/assets/css/custom-variables-bootstrap-2017-12-12.scss">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
 
   <script
   src="https://code.jquery.com/jquery-3.2.1.js"
@@ -67,9 +69,9 @@
         <div class="caption">
           <form id="characterForm">
           <h3 class="name">Name <input type="text" id='name'></h3>
-          <h3 class="lvl">Level  <input type="text" id='level'></h3>
+          <h3 class="lvl">Level  <input type="number" id='level'></h3>
           <h3 class="class">Class  
-            <select name="class">
+            <select name="class" id="class">
               <option value="barbarian">Barbarian</option>
               <option value="bard">Bard</option>
               <option value="cleric">Cleric</option>
@@ -89,7 +91,7 @@
     
     <div class="col-lg-8">
       <ul class="list-group">
-        <li class="list-group-item">Race <select name="class">
+        <li class="list-group-item">Race <select name="class" id="race">
               <option value="dragonborn">Dragonborn</option>
               <option value="dwarf">Dwarf</option>
               <option value="elf">Elf</option>
@@ -100,7 +102,7 @@
               <option value="human">Human</option>
             </select></li>
         <li class="list-group-item">Background <input type="text" id='background'></li>
-        <li class="list-group-item">Alignment <select name="alignment">
+        <li class="list-group-item">Alignment <select name="alignment" id="alignment">
               <option value="lg">Lawful Good</option>
               <option value="ng">Neutral Good</option>
               <option value="cg">Chaotic Good</option>
@@ -111,7 +113,7 @@
               <option value="ne">Neutral Evil</option>
               <option value="ce">Chaotic Evil</option>
             </select></li>
-        <li class="list-group-item">Armor Class <select name="armor">
+        <li class="list-group-item">Armor Class <select name="armor" id="armor">
               <option value="light">Light</option>
               <option value="medium">Medium</option>
               <option value="heavy">Heavy</option>
@@ -176,7 +178,7 @@
     <div class="col-lg-12">
       <div class="panel panel-default">
         <div class="panel-heading">Background Story</div>
-        <textarea name="physical" id="background" cols="245" rows="10"></textarea>
+        <textarea name="physical" id="story" cols="245" rows="10"></textarea>
       </div>
     </div>
   </div>
