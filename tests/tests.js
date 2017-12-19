@@ -1,4 +1,9 @@
 var expect = require('chai').expect;
-var index = require('../public/js/index.js');
+var pass = require('../public/js/test.js');
 
-console.log(subChara)
+describe('disemvowel', () => {
+  it('should trim the string', () => {
+    expect(pass('hello ')).to.equal('hello');
+    expect(pass(' hello')).to.equal('hello');
+  });
+});

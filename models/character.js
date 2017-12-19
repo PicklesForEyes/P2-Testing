@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+var characterObj = (sequelize, DataTypes) => {
   const Character = sequelize.define('Character', {
     name: {
       type: DataTypes.STRING,
@@ -34,6 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     armorClass: {
       type: DataTypes.STRING,
+      allowNull: false,
       len: [1, 45]
     },
     strength: {
@@ -71,7 +72,13 @@ module.exports = (sequelize, DataTypes) => {
     background: {
       type: DataTypes.TEXT,
       allowNull: false,
+    },
+    story: {
+      type: DataTypes.STRING,
+      allowNull: false,
     }
   })
   return Character
 }
+
+module.exports = characterObj;
