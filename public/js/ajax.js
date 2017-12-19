@@ -31,9 +31,17 @@ $(document).ready(() => {
     })
   });
 
-  $('#delete').on('click', e => {
-    e.preventDefault();
+  $('#delete').on('click', event => {
+    event.preventDefault();
+    var url = window.location.href;
+    url = url.split('/');
+    var id = url[4];
 
-    console.log(document.URL)
+    $.ajax({
+      url: '/api/character/' + id,
+      method: 'DELETE'
+    }).done(data => {
+      console.log(data)
+    })
   })
 })
