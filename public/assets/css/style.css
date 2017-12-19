@@ -18,14 +18,19 @@ body{
 	border-color:#e8c98e;
 }
 
-h1, h2{
+h1{
 	font-family:"Fondamento", cursive;
-	font-size:3.142em;
+	font-size:3.789em;
+}
+
+h2{
+	font-family:"Fondamento", cursive;
+	font-size:2.842;
 }
 
 h3, h4, h5, .panel-heading, .panel-body, .list-group-item{
 	font-family: 'Julius Sans One', sans-serif;
-	font-size:1.942em;
+	font-size:2.132em;
 }
 
 .readable, p{
