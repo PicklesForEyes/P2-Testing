@@ -31,16 +31,17 @@ $(document).ready(() => {
     })
   });
 
-  $('#diceRoller').on('click', event => {
+  $('#diceRoll').on('click', event => {
     event.preventDefault();
-    var totalDice = $('#diceNumber').val();
-    var dieSize = $('#dieSides').val();
+    $('#diceRes').empty();
+    var totalDice = $('#diceNum').val();
+    var diceSize = $('#diceSize').val();
     $.ajax({
-      url: `/api/dice/${totalDice}/${dieSize}`,
+      url: `/api/dice/${totalDice}/${diceSize}`,
       method: 'GET'
     }).done(result => {
       for(var i = 0; i < result.length; i++) {
-        $('#diceResult').append(result[i])
+        $('#diceRes').append(result[i] + ',')
       }
     })
   })
