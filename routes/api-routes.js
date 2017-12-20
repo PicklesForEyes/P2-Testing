@@ -70,7 +70,7 @@ module.exports = app => {
   app.get('/api/dice/:totalDice/:dieSize', (req, res) => {
     var roll = new Roll;
 
-    var yahtzee = roll.roll(`${req.params.totalDice}d${req.params.dieSize}`)
+    var yahtzee = roll.roll(`${req.params.totalDice}${req.params.dieSize}`)
 
     res.json(yahtzee.rolled)
   })
