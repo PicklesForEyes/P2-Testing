@@ -33,7 +33,7 @@ var characterObj = (sequelize, DataTypes) => {
       len: [1, 45]
     },
     armorClass: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       len: [1, 45]
     },
