@@ -8,13 +8,8 @@ body{
 	margin-top:-15px;
 }
 
-.panel, .panel-body, .thumbnail{
+.panel, .panel-body, .thumbnail, .panel-default>.panel-heading{
 	background-color:#f8e1ac;
-	border-color:#e8c98e;
-}
-
-.panel-default>.panel-heading {
-	background-color:#cdb078;
 	border-color:#e8c98e;
 }
 
@@ -46,10 +41,19 @@ h3, h4, h5, .panel-heading, .panel-body, .list-group-item>h3{
 	font-size:1.6em;
 }
 
+.btn{
+	font-family: 'Julius Sans One', sans-serif;
+	background-color:#FFF3C7;
+}
+
 .profile{
 	margin-top:71px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
 	color:#f8e1ac;
+}
+
+#diceRoll{
+	margin-top:10px;
 }
