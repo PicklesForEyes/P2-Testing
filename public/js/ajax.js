@@ -8,7 +8,7 @@ $(document).ready(() => {
       Race: $("#race").val(),
       Background: $("#background").val().trim(),
       Alignment: $("#alignment").val(),
-      ArmorClass: $("#armor").val(),
+      ArmorClass: $("#armorClass").val(),
       ExperiencePoints: $("#xp").val().trim(),
       Strength: $("#str").val().trim(),
       Dexterity: $("#dex").val().trim(),
