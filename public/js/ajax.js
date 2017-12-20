@@ -27,7 +27,7 @@ $(document).ready(() => {
       data: character,
       dataType: "JSON"
     }).done(data => {
-      window.location.href = '//localhost:3000/character/' + data.id;
+      window.location.href = '//gentle-thicket-15279.herokuapp.com/character/' + data.id;
     })
   });
 
