@@ -41,44 +41,44 @@ $(document).ready(() => {
     // Bard
     $("#bard").removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/bard.jpg');
-  } else if (charName === "Barbarian") {
+  } else if (charName === "barbarian") {
     // Barbarian
     $('#barbarian').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/barbarian.jpg');
-  } else if (charName === "Cleric") {
+  } else if (charName === "cleric") {
     // Cleric
     $('#cleric').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/cleric.jpg');
-  } else if (charName === "Druid") {
+  } else if (charName === "druid") {
     // Druid
     $('#druid').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/druid.jpg');
-  } else if (charName === "Fighter"){
+  } else if (charName === "fighter"){
     // Fighter
     $('#fighter').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/fighter.jpg');
-  } else if (charName === "Paladin"){
+  } else if (charName === "paladin"){
     // Paladin
     $('#paladin').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/paladin.jpg');
-  } else if (charName === "Monk"){
+  } else if (charName === "monk"){
     // Monk
     $('#monk').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/monk.jpg');
-  } else if (charName === "Ranger"){
+  } else if (charName === "ranger"){
     // Ranger
     $("#ranger").removeAttr('disabled');
     // $('#ranger').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/ranger.jpg');
-  } else if (charName === "Rogue"){
+  } else if (charName === "rogue"){
     // Rogue
     $('#rogue').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/rogue.jpg');
-  } else if (charName === "Sorcerer"){
+  } else if (charName === "sorcerer"){
     // Sorcerer
     $('#sorcerer').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/sorcerer.jpg');
-  } else if (charName === "Wizard"){
+  } else if (charName === "wizard"){
     // Wizard
     $('#wizard').removeAttr('disabled');
     $('#profileImg').attr('src', '/assets/images/wizard.jpg');

@@ -8,7 +8,7 @@ $(document).ready(() => {
       Race: $("#race").val(),
       Background: $("#background").val().trim(),
       Alignment: $("#alignment").val(),
-      ArmorClass: $("#armor").val(),
+      ArmorClass: $("#armorClass").val(),
       ExperiencePoints: $("#xp").val().trim(),
       Strength: $("#str").val().trim(),
       Dexterity: $("#dex").val().trim(),
@@ -27,20 +27,21 @@ $(document).ready(() => {
       data: character,
       dataType: "JSON"
     }).done(data => {
-      window.location.href = '//localhost:3000/character/' + data.id;
+      window.location.href = '//gentle-thicket-15279.herokuapp.com/character/' + data.id;
     })
   });
 
-  $('#diceRoller').on('click', event => {
+  $('#diceRoll').on('click', event => {
     event.preventDefault();
-    var totalDice = $('#diceNumber').val();
-    var dieSize = $('#dieSides').val();
+    $('#diceRes').empty();
+    var totalDice = $('#diceNum').val();
+    var diceSize = $('#diceSize').val();
     $.ajax({
-      url: `/api/dice/${totalDice}/${dieSize}`,
+      url: `/api/dice/${totalDice}/${diceSize}`,
       method: 'GET'
     }).done(result => {
       for(var i = 0; i < result.length; i++) {
-        $('#diceResult').append(result[i])
+        $('#diceRes').append(result[i] + ',')
       }
     })
   })
